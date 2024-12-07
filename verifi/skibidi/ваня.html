@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="kk.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>skibidi toilet</title>
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Мой Профиль:</h1>
+    <img src="Skibidi-Toilet-S0.jpg" class="background-image" alt="скибиди">
+    <button class ="serbo">Реферальная система</button>
+    <div class="profile-info">
+      <h2>Мой Профиль:</h2>
+      <p>Ник: <span id="userNickname"></span></p>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      const nickname = localStorage.getItem("nickname");
+      document.getElementById("userNickname").textContent = nickname;
+    }
+  </script>
+</body>
+</html>
+

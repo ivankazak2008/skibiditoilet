@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="jwe.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>верефикация</title>
+</head>
+<body>
+  <div class="image-container">
+    <img src="njuoi.png" class="debil" alt="скибиди">
+    <img src="random.webp" class="kurva" alt="jhhjh">
+    <form class="nickname-form" id="nicknameForm" action="skibidi/ваня.html" method="GET">
+      <div class="form-heading">
+        <h2>Придумай свой ник</h2>
+      </div>
+      <input type="text" id="nickname" name="nickname" placeholder="Введи свой ник" required>
+      <button type="submit">Готово</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById("nicknameForm").addEventListener("submit", function(event) {
+      const nickname = document.getElementById("nickname").value;
+      localStorage.setItem("nickname", nickname);
+    });
+  </script>
+</body>
+</html>
+
